@@ -1,6 +1,6 @@
 # Enterprise Rental System
 
-Bu proje, bir kurumsal araç kiralama sistemini içermektedir. Aşağıda, projenin temel gereksinimleri özetlenmiştir.
+Bu proje, bir kurumsal araç kiralama sitesidir. Figma üzerinde tasarladığım dizayn çalışmasını ve gereksinim analizini içermektedir.
 
 ## Temel Gereksinimler:
 
