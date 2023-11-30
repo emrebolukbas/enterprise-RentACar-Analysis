@@ -1,6 +1,6 @@
 # Enterprise Rental System
 
-Bu proje, bir kurumsal araç kiralama sitesidir. Figma üzerinde tasarladığım dizayn çalışmasını ve gereksinim analizini içermektedir.
+Bu proje, Enterprise adlı bir kurumsal araç kiralama sitesinin Figma üzerinde tasarladığım dizayn çalışmasını ve gereksinim analizini içermektedir.
 
 ## Temel Gereksinimler:
 
