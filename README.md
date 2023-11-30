@@ -1,5 +1,3 @@
-# enterprise-RentACar-Analysis
-
 # Enterprise Rental System
 
 Bu proje, bir kurumsal araç kiralama sistemini içermektedir. Aşağıda, projenin temel gereksinimleri özetlenmiştir.
