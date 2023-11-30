@@ -1,0 +1,152 @@
+1.Gereksinim-KULLANICILAR ARABALARI FİLTRELEYEBİLMELİDİR.
+
+ACC1: Enterprise sayfasında giriş yapıldığında  araç kiralama kısmında Yurtiçi ve yurtdışı sekmesi için ayrı kiralama şartlarını görünebilmeli
+	 ACC1-a) Yurtiçi filtreleme kısmında  "nereden alacaksınız", "alış tarihi", "iade tarihi" içerisinde yer alan bilgiler sırasıyla  istanbul havalimanı, arama yapılan tarihten bir gün sonrası saat 12:00 ve alış tarihinin 2 gün sonrası saat 12:00  şeklinde varsayılan değerler olarak gelmelidir.
+	 ACC1-b) Yurtdışı filtreleme kısmında   "alış tarihi ve saati", "bırakma tarihi ve zamanı", "sürücü yaşı" içerisinde yer alan bilgiler sırasıyla   arama yapılan tarihten bir gün sonrası saat 12:00, alış tarihinin 1 gün sonrası saat 12:00 ve 35  şeklinde varsayılan değerler olarak gelmelidir.
+
+ ACC2: Uygun filtreleme yapabilmek için istenilen bilgiler girilmelidir.
+	ACC2-a)Yurtiçi sekmesi için default değerler ("nereden alacaksınız", "alış tarihi", "iade tarihi") üzerinden arama yapılabilmeli, istenildiğinde bu değerler değiştrilebilmeli, istenildiğinde "sürücü yaşı" belirtilebilmelidir. Ek olarak "farklı yerde bırakmak istiyorum", "promosyon kodu kullan" seçenekleri checkbox ile tıklandığında aktif olup opsiyonel olarak girilebilmelidir.
+		ACC2-a.1) "farklı yerde bırakmak istiyorum" checkbox'ı aktif olduğunda nereye bırakacağınız kısmına lokasyon seçilmelidir, "promosyon kodu kullan" checkbox'ı aktif olduğunda promosyon türü ve promosyon kodu çıkmalı, veri tabanından çekilen promosyon türüne göre  istenilen bilgiler girilmelidir.
+	ACC2-b)Yurtdışı sekmesi için  "alış lokasyonu" lokasyon, havalimanı veya posta kodu şeklinde girilmeli ve default değerler ("alış tarihi ve saati", "bırakma tarihi ve zamanı", "sürücü yaşı") üzerinden arama yapılabilmeli, istenildiğinde bu değerler değiştrilebilmeli. Ek olarak "Farklı bir konuma geri dönün"seçeneği default olarak işaretli gelmeli, checkboxa tıklandığında deaktif olup "iade lokasyonu" lokasyon, havalimanı veya posta kodu şeklinde girilerek arama yapılabilmelidir.
+
+ ACC3:Eğer lokasyonda  o tarihte uygun araç yoksa "Uygun kriterde araç bulunamadı" bilgisi ekrana yazdırılmalıdır.
+	ACC3-a) Alış tarihi iade tarihinden önce olmalıdır.
+ ACC4:"En uygun aracı bul" butonuna tıklandığında çıkan arama sonucunda web sayfasında girilen kriterlere uyan araçların tümü alt alta özellikleriyle listelenmelidir.
+ 	ACC4-a)vites tipi, yolcu kapasitesi, bagaj kapasitesi, özellikler ve fiyat detayı butonu,  indirimsiz ve varsa indirimli olmak üzere günlük ve toplam fiyat 	bilgisi ve seçme butonu ekran çıktısında  belirtilen formatta olmalıdır(ek_1.jpg)
+	ACC4-b)özellikler ve fiyat detayı butonununa tıklandığında altta araçla ilgili diğer özelliklerin görünebilir olması ve ekteki ekran çıktısında belirtilen 	formatta olması gerekmektedir(ek_2.jpg).
+
+2.Gereksinim- KULLANICILAR LİSTELENEN ARAÇLAR ARASINDA SEÇİM YAPABİLMELİDİR.
+
+ACC1:Kiralama 4 aşamada gerçekleşmelidir.
+	ACC1-a)Kullanıcının o anda  bulunduğu aşama sayfanın üst kısmında ekteki görsel formatında görüntülenebilmelidir(ek_1.jpg).
+	ACC1-b)Sayfanın en üst kısmında ekteki görsel formatında bir alan olmalı ve  bu alanda sol başta kiralama logosu sağ başta kiralama koşulları ve fiyat bilgisi görünmelidir.
+ACC2:Anasayfada yapılan filtrelemeye uygun çıkan arama sonucunda web sayfasında girilen kriterlere uyan araçların tümü alt alta özellikleriyle listelenmelidir.
+ 	ACC2-a)vites tipi, yolcu kapasitesi, bagaj kapasitesi, özellikler ve fiyat detayı butonu,  indirimsiz ve varsa indirimli olmak üzere günlük ve toplam fiyat 	bilgisi ve seçme butonu ekran çıktısında  belirtilen formatta olmalıdır(ek_2.jpg)
+	ACC2-b)özellikler ve fiyat detayı butonununa tıklandığında altta araçla ilgili diğer özelliklerin görünebilir olması ve ekteki ekran çıktısında belirtilen 	formatta olması gerekmektedir(ek_3.jpg).
+
+ACC3:Sayfanın sol kısmında filtreleme başlığı altında araç sınıfı, yakıt tipi ve vites tipine göre filtreleme seçenekleri görünmelidir.
+	ACC3-a) Filtreleme başlıkları altındaki checkboxlara tıklandığında uygun filtreleme yapılmalıdır.
+	ACC3-b)Sayfada görüntülenen araç sayısı filtreleme sonucunda sayfada belirtilmelidir
+	ACC3-c)Filtreleme kısmında "hepsini temizle" butonu olmalı ve butona tıklandığında  seçilen checkboxlar temizlenmeli ve listeleme ilk haline dönmelidir.
+ACC4:Sayfanın sağ üst kısmında sıralama seçeneğine tıklanarak  fiyata göre artan ya da azalan olmak üzere iki farklı seçenek görüntülenebilmelidir.
+ACC5:İstenilen araç seçildiğinde (seç butonuna tılandığında) ekstralar sayfasına yönlendirilmelidir.
+	ACC5-a)SUV, üst ve lüks sınıftan kiralama yapılmaya çalışıldığında "Değerli müşterimiz, SUV, üst ve lüks sınıftan kiralama yapılabilmesi için ofislerimizden daha önce herhangi bir sınıfta kiralama yapma şartı kontrol edilmektedir." yazan bir uyarı penceresi açılmalı ve "SEÇ" ve "ARACI DEĞİŞTİR"  butonları çıkmalı "SEÇ" butonuna tıklandığında bir sonraki sayfaya yönlendirilebilmeli, "ARACI DEĞİŞTİR" butonuna tıklandığında başka bir araç seçilmesi beklenmektedir.
+
+3.Gereksinim-SEÇİLEN ARAÇ İÇİN EKSTRA HİZMETLER GÖRÜNTÜLENMELİDİR.
+
+
+ACC1:Kullanıcının o anda  bulunduğu aşama sayfanın üst kısmında ekteki görsel formatında görüntülenebilmelidir(ek_1.jpg).
+
+ACC2:Sayfanın en üst kısmında ekteki görsel formatında bir alan olmalı ve  bu alanda sol başta kiralama logosu sağ başta kiralama koşulları ve seçilen araca ait fiyat bilgisi görünmelidir.
+
+ACC3:Sayfanın üst kısmında "ekstralar ekle" başlığının altında  kullanıcının seçtiği aracı yükseltmek için bir üst modelden alternatif araç önerisi göstrilmelidir.
+
+ACC4:Ekstralar kısmı zorunlu olmayıp "Ekstralar ekle" butonunun sağında ekstraları seçmeden rezervasyon aşamasına geçebilmek için "rezervasyona devam et" butonu olmalıdır.
+
+ACC5:Sayfada yükselt kısmının altında "ek sigorta paketleri" gelmelidir.
+	ACC5-a)Bu başlık altında basic- standart-premium paketlerin
+		"Mini Hasar Sigortası" maddesinde sigorta kapsamı her bir paket için fiyat bilgisi belirtilmelidir ve fiyat bilgisinin yanında sigorta koşulları 	hakkında bilgi i(information) butonuna tıklandığında mini bir pncere açılarak ekteki görsel formatındaki gibi belirtilmelidir(ek_2_a.jpg).
+		Lastik, Cam, Far Sigortası
+		İhtiyari Mali Mesuliyet Sigortası
+		Ferdi Kaza Sigortası
+	içerip içermediği  gösterilmelidir, "indirimli fiyat" bilgisi de gün bazında dahil olmak üzere ekteki görsel formatındaki gibi belirtilmelidir (ek_2_b.jpg). En altta paktler için ekle butonu olmalı butonlardan aynı andayalnızca bir tanesi seçilebilmeli ve tıklandığında "ekle" butonu "kaldır" butonuna dönüşmeli kiralama süresi bedelince fiyat sayfanın sağ üst kısmındaki toplam fiyat bilgisine eklenmelidir. Kullanıcı eklediği paketi kaldır butonuna tıklayarak kaldırabilmeli ve toplam fiyat bilgisi eski haline dönebilmelidir.
+
+ACC6:"Ek Hizmet" başlığı altında
+	Adrese Teslim
+	Adresten İade
+	Wi-Fi İnternet Cihazı
+	Ek Sürücü
+	Çocuk Koltuğu
+	Güvence Paketi
+	Kış Lastiği
+	Yol Yardım Assistans seçenekleri ve her bir seçenek için fiyat, ayrıntı ve ekle butonu olmalıdır.
+	ACC6-a)Ayrıntılar butonuna tıklandığında ek hizmet ile ilgili detaylar ekrana gelmeli, tekrar tıklandığında kapanmalıdır. Görsel formatı ekteki gibi olmalıdır.(ek_2.gif)
+	ACC6-b)Kullanıcı istediği takdirde her hizmetten yararlanabilmelidir. "Çocuk Koltuğu" seçeneği 1-3 arasında, "Wi-Fi İnternet Cihazı" 1-100 arasında eklenebilir olmalıdır.
+		Burada seçilecek olacak sayılar yalnızca artı ve eksi butonları ile değiştirilebilir olmalıdır.
+	ACC6-c)Kullanıcı hizmetlerden dilediğini ekleyebildiği gibi kaldırabilmeli, eklediği hizmet ücreti "Toplam" kısmına yansımalıdır.
+
+ACC7:"Ek Hizmet" kısmının altında da "Rezervasyona Devam Et" butonu olmalıdır.
+ACC8:"Rezervasyona Devam Et" butonuna tıklandığında, kullanıcı bir sonraki "Ödeme" sayfasına yönlendirilmelidir.
+
+4.Gereksinim - KULLANICI ÖDEME YAPABİLMELİDİR.
+
+
+ACC1:Açılan sayfada kullanıcı "KONTROL ET VE REZERVASYONU TAMAMLA" başlığını görmelidir. 
+
+ACC2:Sayfanın sol tarafında kullanıcı tercihlerine göre belirlenen, "Kiralama Detayları", kullanıcının seçimleri ve "Kiralama Şartları" kısımları yer almalıdır. "Kiralama Detayları" ve kullanıcının seçimleri kullanıcının takdirine bağlı olarak değiştirilebilir olmalıdır.
+
+ACC3:"Kiralama Detayları" bölümünde kullanıcı seçimleri "TARİHLER VE SAATLER", "ALIŞ VE DÖNÜŞ YERİ" ve "EK DETAYLAR" başlıkları altında listelenmelidir. Kullanıcı her başlığın yanında ki değiştir butonu ile bu başlığa ait seçimlerini değiştirebilmelidir.
+
+ACC4:Kullanıcının seçimleri kiralamak istediği aracın sınıfı başlığı altında gösterilmelidir. Bu kısımda araç bilgisi ve görseli, kaç gün kiralayacağı bilgisi ve aracın günlük fiyatı, ekstralar ve toplam fiyat bilgisi yer almalıdır.
+	ACC4-a)"Ekstralar" ve "Araç" kısmında bulunan "Değiştir" butonuna tıklandığında kullanıcı ilgili sayfaya yönlendirilmelidir.
+	ACC4-b)Araç görseli altında bulunan "Yükselt" seçeneği ile kullanıcı aracını önerilen bir üst model araca yükseltebilmelidir.
+	ACC4-c)Sayfanın en üstünde bulunan "Toplam" kısmı ile bu kısımda bulunan "Genel Toplam" kısmı aynı olmalıdır.
+
+ACC5:"Kiralama Şartları" başlığı altında
+	Hasar Servis Hizmeti
+	Yakıt Hizmeti
+	Sigorta Poliçesi
+	Ödeme Koşulları
+	Ek Sigortalar
+	Kiracı Gereksinimleri
+	Fiyat Dahil Olan Hizmetler
+	Fiyata Dahil Olmayan Hizmetler
+	Kiralama Süresi
+	Hasar Arıza Servisi
+	İptal İade Şartları
+	Km Sınırları
+	Yurt Dışı Çıkış
+	Trafik Ceza maddeleri bulunmalı ve tıklanılan herhangi madde ile ekte bulunan görseldeki formata uygun bir pencere açılmalıdır. Bu pencerede tıklanılan madde ile ilgili detaylar bulunmalıdır ve bu pencere ile kullanıcı istediği maddeye geçiş yapabilmelidir.(ek_1.jpg)
+
+ACC6:"KONTROL ET VE REZERVASYONU TAMAMLA" başlığının altında, sayfanın sağ üst kısmında kullanıcı "Hala üye değil misiniz?" alanı içerisindeki "Giriş Yap" veya "Üye Ol" butonu ile devam edebilmelidir.
+
+ACC7:"Hala üye değil misiniz?" alanının altında "Hediye Çeki Kullanmak İstiyorum" checkbox'ı olmalıdır. Kullanıcı bu kısmı tıkladığında "Hediye Çeki Kodu" alanı gelmelidir. Bu alana kullanıcı geçerli bir hediye çeki kodu girdiği takdirde "Kullan" butonu ile bu çeki kullanabilmelidir ve "Toplam" fiyat güncellenmelidir.
+
+ACC8:"Hediye Çeki Kullanmak İstiyorum" checkbox'ı altında "Kişisel Bilgiler"
+bölümü olmalıdır. Bu bölümde kullanıcıya ait bilgilerin alınacağı bir form bulunmalıdır. Bu formda kullanıcıdan
+İsim
+Soyisim
+Ülke Kodu
+Telefon Numarası
+E-Posta Adresi
+Doğum Tarihi
+Ehliyet Alış Tarihi
+Kimlik Bilgisi
+TC Kimlik No
+Şehir
+Ülke
+Adres bilgilerinin zorunlu olarak girilmesi istenmelidir. Alanlardan herhangi birinin boş bırakılması durumunda boş bırakılan her alanın altında "Bu alan boş bırakılamaz." uyarısı gelmelidir.
+"Kişisel Bilgiler" başlığının yanında "Formu Temizle" butonu olmalı ve kullanıcı bu buton ile girdiği bilgileri silebilmelidir.
+	ACC8-a)Formun sonunda "Fatura bilgilerimde kişisel bilgilerimi kullan" checkbox'ı olmalı ve bu checkbox sayesinde kullanıcı girmiş olduğu kişisel bilgileri "Fatura Bilgileri" kısmı ile aynı başlık altında ki bilgileri getirebilmelidir.
+
+ACC9:"Kişisel Bilgiler" kısmının altında "Fatura Bilgileri" kısmı olmalıdır. Bireysel ve Kurumsal olarak iki kısma sahip olmalıdır.
+	ACC9-a)"Bireysel" kısımda
+		İsim
+		Soyisim
+		TC Kimlik No
+		Adres başlıkları bulunmalıdır. Zorunlu doldurulmalıdır.
+	ACC9-b)"Kurumsal" kısımda
+		Firma Adı
+		Vergi No
+		Vergi Dairesi
+		Adres başlıkları bulunmalıdır. Zorunlu doldurulmalıdır.
+
+ACC10:"Uçuş Bilgilerimi Yazmak İstiyorum" checkbox'ı olmalıdır ve kullanıcı bu checkbox'a tıkladığında "Uçuş Bilgilerim" başlığı altında "Uçuş Numarası"nı gireceği alan açılmalıdır.
+
+ACC11:"Ödeme Bilgileri" başlığı bulunmalıdır. Bu başlık altında "Kredi Kartı ile Öde" ve "Alışveriş Kredisi İle Öde" seçenekleri bulunmalıdır.
+	ACC11-a)"Kredi Kartı ile Öde" kısmında kullanıcıdan
+		Kart Numarası
+		Kart Üzerindeki İsim
+		Son Kullanma Tarihi
+		CVC Güvenlik Kodu bilgileri alınmalıdır. Her alan zorunlu olarak doldurulmalı ve Müşteri ismi ile kredi kartı üzerindeki isim aynı olmalıdır. Kullanıcının girdiği bilgiler doğrultusunda bilgi kutucuklarının altında bulunan kredi kartı modeli güncellenmelidir. Mouse ile bu modelin üzerine gelindiğinde model dönmelidir.
+	ACC11-b)"Alışveriş Kredisi İle Öde" kısmında kulanıcı kredi ile ilgili bilgilendirilmelidir. Ve ayrıntılı bilgi için banka adresine yönlendirilmelidir.
+	ACC11-c)Her iki alan için de
+		"KVKK Aydınlanma Metni'ni okudum, kabul ediyorum."
+		"Kiralama Sözleşmesi'ni okudum, kabul ediyorum."
+		"Tarafıma tüm ticari kampanyalar dahil olmak üzere, tüm iletişim kanallarından (SMS, telefon, e-bülten vs.) ticari elektronik ileti gönderilmesini kabul ediyorum."
+		"Üyeliğinizi onaylayın, size özel indirimlerden faydalanın."
+checkbox'ları bulunmalı, ilk iki checkbox zorunlu olarak işaretlenmeli ve son iki checkbox default olarak işaretlenmiş olarak gelmelidir. Kullanıcı isterse son iki checkbox'ı kaldırabilmelidir. Checkbox'ların altında "Rezervasyonu Tamamla" butonu olmalıdır.
+
+ACC12:Kullanıcı "Rezervasyonu Tamamla" butonuna tıklandığında kullanıcı '3D Security'ye yönlendirilmeli, işlem tamamlandığında 'Rezervasyon Başarılı Bir Şekilde Oluşturulmuştur.' bilgisi kullanıcıya verilmelidir. Rezervasyon detayları kullanıcıya mail ve sms yoluyla iletilmelidir.
+
+
